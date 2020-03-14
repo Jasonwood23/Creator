@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    background: url("../images/apple.jpg");
+    background-size: cover;
+    padding-top: 100px;
+}
+a{
+    color: black;
+}
+/*头部*/
+#top{
+    background-color: rgba(241,241,241,0.8);
+    height: 44px;
+    width: 100%;
+
+    /*相对于浏览器定位*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*居中*/
+    line-height: 44px;
+
+    font-size: 18px;
+}
+
+#top .top-left{
+    display: inline-block;
+}
+
+#top .top-left li{
+    float: left;
+    margin-left: 8px;
+}
+#top .top-right{
+    float: right;
+}
+#top .top-right li{
+    margin-right: 8px;
+}
+
+/*中间的内容*/
+#content .file{
+    color: white;
+    text-align: center;
+
+    display: inline-block;
+
+    margin-left: 18px;
+}
+#content .file img{
+    width: 140px;
+}
+
+#footer{
+    /*background-color: red;*/
+    width: 100%;
+    height: 66px;
+    /*相对于浏览器定位*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#footer .dock{
+    width: 60%;
+    height: 100%;
+    background: url("../images/dock_bg.png");
+    /*居中*/
+    margin: 0 auto;
+
+    /*圆角 */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 0.9;
+
+    /*子标签水平垂直居中*/
+    text-align: center;
+    line-height: 66px;
+}
+#footer .dock ul,#footer .dock ul li{
+    display: inline-block;
+}
+#footer .dock img{
+    width: 50px;
+
+    margin: 0 6px;
+}
+#footer .dock ul li{
+    /*过渡属性*/
+    -webkit-transition: linear 0.25s;
+    -moz-transition: linear 0.25s;
+    -ms-transition: linear 0.25s;
+    -o-transition: linear 0.25s;
+    transition: linear 0.25s;
+}
+
+#footer .dock ul li:hover{
+    /*位置参照*/
+    transform-origin:   bottom ;
+    /*2D变形*/
+    transform: scale(1.5);
+
+}
